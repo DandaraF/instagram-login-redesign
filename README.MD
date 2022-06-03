@@ -8,3 +8,5 @@ Criar o login do instagram para o desafio "Recriando página inicial do instagra
 ## Skills utilizadas
 * HTML
 * CSS
+
+![login_instagram](https://user-images.githubusercontent.com/11448587/171964290-432d7807-1fab-41f0-af10-37f0c996cb8f.png)
