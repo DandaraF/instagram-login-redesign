@@ -4,3 +4,7 @@ Criação da página inicial do instagram utilizando o redesign de <a href="http
 
 ## Objetivo
 Criar o login do instagram para o desafio "Recriando página inicial do instagram" - Digital Innovation One Inc.
+
+## Skills
+* HTML
+* CSS
