@@ -17,30 +17,31 @@ html, body{
 
 #container-page{
   height: 600px;
-  width: 1078px;
+  width: 1024px;
   display: flex;
   align-items: center;
   flex-direction: row;
+
 }
 
 .container-phones{
   height: 100%;
-  display: flex;
-  margin-left: -40px;
+  display: flex; 
+  transition: width 2s, height 4s;
 }
 
-.container-phones .imagens-phones{
-  height:100% ;
+.imagens-phones{
+  height:100%; 
 }
 
 .container-content{
-  padding-left: 2rem;
   display: flex;
   align-items: center;
   align-content: stretch;
   flex-direction: column;
   height: 588px;
   gap: 21px;
+  box-sizing: border-box;
   width: auto;
 }
 
@@ -50,7 +51,8 @@ html, body{
   flex-direction: column;
   justify-content: space-between;
   padding: 35px 29px 30px;
-  width: 320px;
+  width: 350px;
+  box-sizing: border-box;
   height: 480px;
   background-color: #fff;
   border-radius: 12.6px;
@@ -120,13 +122,14 @@ hr{
   width: 176px;
 }
 
-.container-buttons{
+.container-buttons-app{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  
 }
 
-.container-buttons .button-app{
+.button-app{
   display: flex;
   width: 175px;
   height: 48px;
@@ -138,9 +141,19 @@ hr{
   box-shadow: 8px 5px 9px 0px rgba(147, 153, 176, 0.15);
 }
 
-.container-buttons .button-app img{
+.button-app img{
   width: 97px;
 }
 
-
-
+@media (max-width: 768px){
+  .container-phones{
+     display: none;
+  }
+  #container-page{
+    max-width: 767px;
+    justify-content: center;
+  }
+ .button-app{
+   width: 165px;
+ }
+}
