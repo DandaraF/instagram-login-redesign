@@ -12,37 +12,37 @@ html, body{
   background-color: #E5E5E5;
   color: #5A686C;
   font-size: 12px;
-  
 }
 
 #container-page{
-  height: 600px;
+  height: auto;
   width: 1024px;
   display: flex;
   align-items: center;
   flex-direction: row;
-
 }
-
 .container-phones{
   height: 100%;
+  width: 60%;
+  width: auto;
+  box-sizing: border-box;
   display: flex; 
-  transition: width 2s, height 4s;
 }
 
 .imagens-phones{
-  height:100%; 
+  width: 94%;
 }
+
 
 .container-content{
   display: flex;
   align-items: center;
   align-content: stretch;
   flex-direction: column;
-  height: 588px;
+  height: auto;
+  width: auto;
   gap: 21px;
   box-sizing: border-box;
-  width: auto;
 }
 
 .container-login{
@@ -51,7 +51,7 @@ html, body{
   flex-direction: column;
   justify-content: space-between;
   padding: 35px 29px 30px;
-  width: 350px;
+  width: auto;
   box-sizing: border-box;
   height: 480px;
   background-color: #fff;
@@ -59,6 +59,7 @@ html, body{
   box-shadow: 8px 5px 9px 0px rgba(147, 153, 176, 0.15);
   font-size: 14px;
 }
+
 a{
   text-decoration: none;
   color: #5A686C;
@@ -68,7 +69,6 @@ a{
   flex-direction: column;
   width: 100%;
   gap: 12.6px;
-
 }
 
 .input-form{
@@ -118,20 +118,20 @@ hr{
   font-weight: 600;
 }
 
-.container-login .logo-instagram{
+.logo-instagram{
   width: 176px;
 }
 
 .container-buttons-app{
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .button-app{
   display: flex;
-  width: 175px;
+  width: 168px;
   height: 48px;
   border-radius: 4px;
   border: 1px solid black;
@@ -145,15 +145,56 @@ hr{
   width: 97px;
 }
 
+@media (max-width: 1023px){
+  .container-phones{
+    display: none; 
+  }
+  #container-page{
+    max-width: 1023px;
+    width: auto;
+    box-sizing: border-box;
+  }
+  body{
+    box-sizing: border-box;
+  }
+}
+
 @media (max-width: 768px){
+  html, body{
+    background-color: #FFF;
+  }
   .container-phones{
      display: none;
   }
   #container-page{
     max-width: 767px;
+    width: auto;
     justify-content: center;
+    align-self: flex-start;
+    align-items: flex-end;
   }
- .button-app{
-   width: 165px;
- }
+  .container-login{
+    box-shadow: none;
+  }
+  .container-content{
+    gap:30px;
+    width: 100%;
+  }
+  .container-login{
+    gap:30px;
+    height: auto;
+  }
+  .content-form{
+    margin-top: 20px;
+    gap:20px;
+   
+  }
+  .container-buttons-app{
+    justify-content: space-around;
+  }
+  .button-app{
+    width: 160px;
+  }
 }
+
+
